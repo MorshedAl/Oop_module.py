@@ -17,7 +17,7 @@ class Sports:
 class Student(Family, School, Sports):
  def __init__(self, address, id, level, game) -> None:
  
-  super().__init__(address) #super ইউজ করলে একাধিক class এর প্রথমটিকে ইন্ডিকেইট করে।
+  super().__init__(address) #একাধিক class থাকলে,super প্রথমটিকে ইন্ডিকেইট করে।
   School.__init__(self,id, level) 
   Sports.__init__(self, game)
   
